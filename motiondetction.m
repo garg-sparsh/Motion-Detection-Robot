@@ -84,9 +84,9 @@ end
 end
 end
 end
-% s=serial('COM9','BaudRate',9600,'Parity','none');
-% fopen(s);
-% fprintf(s,trans);
-% fclose(s);
+s=serial('COM9','BaudRate',9600,'Parity','none');
+fopen(s);
+fprintf(s,trans);
+fclose(s);
 end
 stop(vid),delete(vid),clear vid;
